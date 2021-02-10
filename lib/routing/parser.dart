@@ -28,7 +28,7 @@ class MainRouterInformationParser extends RouteInformationParser<NavigationStack
       switch (key) {
         case _Keys.appSection:
           if (AppSection.validIds.contains(value)) {
-            NavigationStackItem.appSection(id: value);
+            items.add(NavigationStackItem.appSection(id: value));
           } else {
             items.add(NavigationStackItem.notFound());
           }
